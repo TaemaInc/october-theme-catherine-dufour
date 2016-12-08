@@ -1,0 +1,7 @@
+description = "Bannière de haut de page"
+==
+{% if banniere is empty %}
+    {% set banniere = this.page.fileName %}
+{% endif %}
+
+<img src="{{ ('assets/images/bannieres/' ~ banniere ~ '.jpg') | theme }}" class="banniere-page" />

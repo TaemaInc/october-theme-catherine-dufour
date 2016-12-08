@@ -1,17 +1,11 @@
 description = "Navigation bar"
 ==
-<section id="navbar" class="m-b-3">
-	<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
-		<div class="container">
-			<a class="navbar-brand" href="{{ 'features'|page }}">Bootstrap 4</a>
-			<ul class="nav navbar-nav pull-xs-right">
-				<li class="nav-item{{ this.page.baseFileName == 'features' ? ' active' }}">
-					<a class="nav-link" href="{{ 'features'|page }}">Features</a>
-				</li>
-				<li class="nav-item{{ this.page.baseFileName == 'author' ? ' active' }}">
-					<a class="nav-link" href="{{ 'author'|page }}">Author</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-</section>
+
+<ul class="nav nav-inline main-navbar">
+    <li class="nav-item"><a href="{{ 'biographie' | page }}" class="nav-link">Catherine</a></li>
+    <li class="nav-item"><a href="{{ 'club' | page }}" class="nav-link">Club IAC</a></li>
+    <li class="nav-item"><a href="{{ 'courses' | page }}" class="nav-link">Courses</a></li>
+    <li class="nav-item"><a href="{{ 'partenaires' | page }}" class="nav-link">Partenaires</a></li>
+    <li class="nav-item"><a href="{{ 'resultats' | page}}" class="nav-link">Résultats</a></li>
+    <li class="nav-item"><a href="{{ 'presse' | page }}" class="nav-link">Salle de presse</a></li>
+</ul>

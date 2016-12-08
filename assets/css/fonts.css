@@ -1,0 +1,35 @@
+/* Regular */
+@font-face {
+    font-family: 'CaviarDreams';
+    src:
+        url('../fonts/CaviarDreams/CaviarDreams.ttf')
+        format('truetype');
+}
+
+/* Bold */
+@font-face {
+    font-family: 'CaviarDreams';
+    src:
+        url('../fonts/CaviarDreams/CaviarDreams_Bold.ttf')
+        format('truetype');
+    font-weight: bold;
+}
+
+/* Bold-Italic */
+@font-face {
+    font-family: 'CaviarDreams';
+    src:
+        url('../fonts/CaviarDreams/CaviarDreams_BoldItalic.ttf')
+        format('truetype');
+    font-style: italic;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'CaviarDreams';
+    src:
+        url('../fonts/CaviarDreams/CaviarDreams_Italic.ttf')
+        format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

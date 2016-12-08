@@ -6,23 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+      <title>Catherine Dufour - {{ this.page.title }}</title>
+      <meta name="description" content="{{ this.page.meta_description }}">
+      <meta name="title" content="{{ this.page.meta_title }}">
+      <meta name="keywords" content="Catherine Dufour, Kitesurf, Charlevoix, Isle-aux-Coudres" />
+
+      <link href="{{ 'assets/images/logo.ico' | theme }}" rel="shortcut icon" type="image/x-icon">
+
     <link href="{{ [
       'assets/vendor/bootstrap/dist/css/bootstrap.min.css',
       'assets/vendor/font-awesome/css/font-awesome.min.css',
       'assets/vendor/animate.css/animate.min.css',
-      'assets/vendor/plyr/dist/plyr.css'
+      'assets/vendor/plyr/dist/plyr.css',
+      'assets/css/fonts.css',
+      'assets/css/style.css'
     ]|theme }}" rel="stylesheet">
     {% styles %}
 
   </head>
   <body>
 
-	{% partial 'navbar' %}
-
-  {% partial 'jumbotron' %}
-
+  <div class="center">
+    {% partial 'banniere' %}
+  </div>
   <section id="page" class="container m-b-3">
+      <div class="row center">
+          {% partial 'navbar' %}
+      </div>
     {% page %}
+
+      <div class="row center">
+          <img src="{{ 'assets/images/commun/ligne.jpg'|theme }}" class="ligne-hr" />
+          {% partial 'footerbar' %}
+          <a href="https://www.facebook.com/catherine.dufour.56?ref=tn_tnmn" target="_blank">
+              <img src="{{ 'assets/images/commun/fb.jpg'|theme}}" />
+          </a>
+          <br />
+
+          <div class="oasis">
+              <a href="http://www.oasiscommunication.ca/" target="_blank">
+                  <span>Réalisation: Oasis Communication-Marketing</span>
+              </a>
+          </div>
+      </div>
   </section>
 
     <script src="{{ [
