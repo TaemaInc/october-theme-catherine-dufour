@@ -1,3 +1,5 @@
+[localePicker]
+forceUrl = 0
 ==
 <!DOCTYPE html>
 <html lang="en">
@@ -45,8 +47,12 @@
 
           <div class="oasis">
               <a href="http://www.oasiscommunication.ca/" target="_blank">
-                  <span>Réalisation: Oasis Communication-Marketing</span>
+                  <span>{{ 'Réalisation' |_ }}: Oasis Communication-Marketing</span>
               </a>
+          </div>
+
+          <div class="language-picker">
+            {% component 'localePicker' %}
           </div>
       </div>
   </section>

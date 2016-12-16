@@ -58,3 +58,10 @@ ul.contact-information{
     padding-left: 0;
     list-style-type: none;
 }
+
+.language-picker {
+    width: 150px;
+    margin-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+}

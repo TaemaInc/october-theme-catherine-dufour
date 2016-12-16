@@ -8,9 +8,11 @@ eventsPerPage = 10
 noEventMessage = "No events."
 calendar = 1
 eventPage = "events/event"
-==
 
-{% partial 'contenu/courses' %}
+[viewBag]
+localeUrl[en] = "/races"
+==
+{% content 'courses' %}
 
 <hr />
 
